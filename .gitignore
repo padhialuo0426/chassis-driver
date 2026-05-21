@@ -1,3 +1,4 @@
 .deveco/**
 .vscode/**
 .DS_Store
+output/*
