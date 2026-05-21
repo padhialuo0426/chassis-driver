@@ -20,7 +20,9 @@ if(DEFINED CONFIG_ENABLE_PRODUCTS_SAMPLE)
     add_subdirectory_if_exist(products)
 endif()
 
-add_subdirectory_if_exist(custom)
+if(DEFINED CONFIG_ENABLE_CHASSIS_DRIVER)
+add_subdirectory_if_exist(chassis-driver)
+endif()
 
 set(PRIVATE_HEADER
 )

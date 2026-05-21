@@ -1,0 +1,33 @@
+config I2C_SUPPORT_CONCURRENCY
+    bool
+    prompt "Support I2C concurrency."
+    default y
+    depends on SUPPORT_I2C_MASTER
+    help
+        This option means support I2C concurrency for ChassisDriver sample.
+
+config SUPPORT_I2C_MASTER
+    bool
+    prompt "Support I2C Configuration."
+    default y
+    depends on ENABLE_CHASSIS_DRIVER
+    help
+        This option means support I2C configuration for ChassisDriver sample.
+
+config I2C_MASTER_BUS_ID
+    int
+    prompt "Choose I2C master bus id."
+    depends on SUPPORT_I2C_MASTER
+    default 1
+
+config I2C_SCL_MASTER_PIN
+    int
+    prompt "Choose I2C SCL master pin."
+    depends on SUPPORT_I2C_MASTER
+    default 15
+
+config I2C_SDA_MASTER_PIN
+    int
+    prompt "Choose I2C SDA master pin."
+    depends on SUPPORT_I2C_MASTER
+    default 16
