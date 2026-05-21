@@ -2,5 +2,5 @@
 .vscode/**
 .DS_Store
 output/*
-**.a
 **.pyc
+interim_binary/**/*.a
