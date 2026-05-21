@@ -47,5 +47,5 @@ config ENABLE_CHASSIS_DRIVER
         This option means support Chassis Driver.
 
 if ENABLE_CHASSIS_DRIVER
-osource "application/samples/chassis-driver/Kconfig"
+osource "application/samples/chassis_driver/Kconfig"
 endif
